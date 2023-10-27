@@ -23,5 +23,23 @@ pipeline{
         }
 
     }
+
+    post
+    {
+        always
+        {
+            bat 'echo "Always"'
+        }
+
+        success
+        {
+            bat 'echo "Success"'
+        }
+
+        failure
+        {
+            bat 'echo "Failure"'
+        }
+    }
     
 }
